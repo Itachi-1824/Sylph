@@ -1,0 +1,90 @@
+Sylph Community Data License (SCDL) v1.0
+
+Copyright (c) 2026 Sylph Contributors
+
+PREAMBLE
+
+This license governs the shared knowledge data (Verified Knowledge Capsules,
+LoRA weight deltas, and related artifacts) exchanged through the Sylph
+peer-to-peer network. The software itself is licensed under AGPL-3.0
+(see LICENSE file). This license covers the DATA, not the software.
+
+All data shared through Sylph is fully anonymized. No personal information,
+credentials, or identifying data is included in any shared artifact. Users
+control all sharing features and may opt out at any time.
+
+TERMS
+
+1. DEFINITIONS
+
+   "Data" means Verified Knowledge Capsules (VKCs), LoRA weight deltas,
+   embeddings, and any derivative artifacts shared through the Sylph network.
+
+   "Network" means the Sylph peer-to-peer network and any compatible client.
+
+   "Contributor" means any person or entity that shares Data through the Network.
+
+   "Commercial Model Training" means using Data to train, fine-tune, or
+   improve a machine learning model that is sold, licensed, or offered as
+   a commercial service.
+
+2. GRANT OF RIGHTS
+
+   You are free to:
+   a) Use Data for personal learning and local model improvement
+   b) Use Data within the Sylph Network for any purpose
+   c) Use Data for non-commercial academic research
+   d) Share and redistribute Data within the Sylph Network
+
+3. CONDITIONS
+
+   If you use Data for Commercial Model Training, you must:
+   a) Contribute back to the Network any improvements derived from the Data
+   b) Make your trained model's outputs available through the Network
+   c) Credit "Sylph Community" in any public documentation of the model
+
+4. ANONYMIZATION
+
+   All Data shared through the Network has been processed to remove:
+   - Personal identifying information (names, emails, addresses, phone numbers)
+   - Credentials (API keys, passwords, tokens, private keys)
+   - Proprietary identifiers (file paths, internal URLs, company names)
+
+   Contributors are responsible for verifying anonymization before sharing.
+   The Network applies automated scanning as an additional safeguard.
+
+5. USER CONTROL
+
+   Every Contributor retains full control over their participation:
+   - All sharing features are enabled by default and explained during
+     guided setup. Contributors are encouraged to keep sharing on.
+   - Contributors may disable any sharing feature at any time.
+     Disabling stops future sharing immediately.
+   - Once Data has been shared and other nodes have trained on it,
+     that knowledge becomes part of the collective intelligence and
+     cannot be individually removed. This is inherent to how distributed
+     learning works. All Data is fully anonymized before sharing
+     specifically because retraction is not possible after propagation.
+
+6. FORENSIC WATERMARKS
+
+   Data shared through the Network contains forensic watermarks for
+   integrity verification and provenance tracking. These watermarks do
+   not affect the functional quality of the Data.
+
+7. NO WARRANTY
+
+   Data is provided "as is" without warranty of any kind. Contributors
+   and the Sylph project make no guarantees about accuracy, completeness,
+   or fitness for any purpose.
+
+8. LIMITATION OF LIABILITY
+
+   In no event shall any Contributor or the Sylph project be liable for
+   any damages arising from use of the Data.
+
+9. TERMINATION
+
+   This license terminates automatically if you violate any of its terms.
+   Upon termination, you must cease all use of Data obtained through
+   the Network for Commercial Model Training purposes.

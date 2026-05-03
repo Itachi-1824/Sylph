@@ -1,0 +1,114 @@
+Sylph Public Use License v1.0
+
+Copyright (c) 2026 Sylph Contributors
+
+---
+
+IMPORTANT: This license governs TWO separate components with different terms.
+
+=============================================================================
+COMPONENT 1: SYLPH SOFTWARE (original code)
+=============================================================================
+
+The Sylph software — comprising the agent scaffold, P2P network layer, security
+layer, training loop, dashboard, IDE plugin, and all other original code written
+for this project — is licensed under the following terms:
+
+TERMS AND CONDITIONS
+
+1. GRANT OF RIGHTS
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to:
+
+   a) USE the Software for any purpose, including commercial and private use,
+      without restriction.
+
+   b) MODIFY the Software for private or internal use.
+
+   c) CONTRIBUTE modifications back to the official Sylph repository
+      (the "Official Repository") via pull requests or other contribution
+      mechanisms established by the project maintainers.
+
+2. RESTRICTIONS
+
+   The following actions are expressly PROHIBITED without prior written
+   permission from the project maintainers:
+
+   a) REDISTRIBUTION — You may NOT redistribute the Software, in whole or in
+      part, in original or modified form, through any medium, including but not
+      limited to: publishing forks, hosting mirrors, bundling with other
+      software, or distributing compiled binaries derived from the Software.
+
+   b) DERIVATIVE DISTRIBUTION — You may NOT distribute derivative works based
+      on the Software. Modified versions are for private/internal use only.
+      Public distribution of modifications must be contributed to the Official
+      Repository.
+
+   c) SUB-LICENSING — You may NOT grant rights to the Software to third parties
+      beyond what is permitted in Section 1.
+
+3. RATIONALE
+
+   Sylph operates a peer-to-peer federated learning network that interconnects
+   potentially millions of nodes. Unauthorized redistributions and modified
+   forks pose critical security risks to all participants in the network,
+   including but not limited to:
+
+   - Introduction of backdoored or poisoned model weights
+   - Bypass of Byzantine fault tolerance and validation mechanisms
+   - Compromise of differential privacy guarantees
+   - Sybil attacks through unvetted client modifications
+   - Network fragmentation undermining collective intelligence
+
+   All modifications to the Software that affect network-facing behavior MUST
+   be reviewed and merged through the Official Repository to maintain the
+   security and integrity of the global Sylph network.
+
+   NOTE: Security of the P2P network against modified clients is enforced
+   technically, not solely legally. Technical enforcement mechanisms include:
+   (1) 6-stage cryptographic validation of every received LoRA delta,
+   (2) code-signed release verification in the installer,
+   (3) Byzantine aggregation that rejects deltas from poorly-behaved nodes
+       regardless of what software they claim to run.
+   The no-redistribution clause reinforces this technical enforcement.
+
+4. CONTRIBUTIONS
+
+   By submitting contributions to the Official Repository, you agree that your
+   contributions are licensed under the same terms as this license.
+
+5. DISCLAIMER
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+6. TERMINATION
+
+   This license is automatically terminated if you violate any of its terms.
+   Upon termination, you must destroy all copies of the Software in your
+   possession.
+
+=============================================================================
+COMPONENT 2: MODEL WEIGHTS (Qwen 3.5 series and other base models)
+=============================================================================
+
+The base model weights used by Sylph (Qwen3.5 series and other Qwen-family
+models) are released by Alibaba Cloud under the Apache License, Version 2.0.
+
+Users receive the model weights under Apache 2.0 with full redistribution
+rights as granted by that license. The Sylph Public Use License does NOT
+and CANNOT override or restrict rights granted by Apache 2.0 for those weights.
+
+Apache 2.0 grants irrevocable rights to use, reproduce, and distribute the
+model weights (with attribution). Sylph's no-redistribution clause applies
+ONLY to Sylph's original software (Component 1), not to the Apache 2.0
+model weights.
+
+The full text of the Apache License, Version 2.0 is available at:
+https://www.apache.org/licenses/LICENSE-2.0
