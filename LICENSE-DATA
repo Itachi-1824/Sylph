@@ -6,12 +6,14 @@ PREAMBLE
 
 This license governs the shared knowledge data (Verified Knowledge Capsules,
 LoRA weight deltas, and related artifacts) exchanged through the Sylph
-peer-to-peer network. The software itself is licensed under AGPL-3.0
-(see LICENSE file). This license covers the DATA, not the software.
+peer-to-peer network. The software itself is licensed under the Sylph Public
+Use License v1.0 (see LICENSE file). This license covers the DATA, not the
+software.
 
-All data shared through Sylph is fully anonymized. No personal information,
-credentials, or identifying data is included in any shared artifact. Users
-control all sharing features and may opt out at any time.
+All data shared through Sylph is anonymized before it leaves your device.
+Sharing is designed so that no personal information, credentials, or identifying
+data is included in any shared artifact. Users control all sharing features and
+may opt out at any time.
 
 TERMS
 
@@ -45,7 +47,7 @@ TERMS
 
 4. ANONYMIZATION
 
-   All Data shared through the Network has been processed to remove:
+   All Data shared through the Network is processed to remove:
    - Personal identifying information (names, emails, addresses, phone numbers)
    - Credentials (API keys, passwords, tokens, private keys)
    - Proprietary identifiers (file paths, internal URLs, company names)
@@ -63,14 +65,14 @@ TERMS
    - Once Data has been shared and other nodes have trained on it,
      that knowledge becomes part of the collective intelligence and
      cannot be individually removed. This is inherent to how distributed
-     learning works. All Data is fully anonymized before sharing
+     learning works. All Data is anonymized before sharing
      specifically because retraction is not possible after propagation.
 
-6. FORENSIC WATERMARKS
+6. PROVENANCE & INTEGRITY
 
-   Data shared through the Network contains forensic watermarks for
-   integrity verification and provenance tracking. These watermarks do
-   not affect the functional quality of the Data.
+   Data shared through the Network may carry provenance and integrity metadata
+   used to verify authenticity and trace the origin of artifacts. This metadata
+   does not affect the functional quality of the Data.
 
 7. NO WARRANTY
 

@@ -1,4 +1,4 @@
-Sylph Public Use License v1.0
+Sylph Public Use License (PUL) v1.0
 
 Copyright (c) 2026 Sylph Contributors
 
@@ -10,8 +10,8 @@ IMPORTANT: This license governs TWO separate components with different terms.
 COMPONENT 1: SYLPH SOFTWARE (original code)
 =============================================================================
 
-The Sylph software — comprising the agent scaffold, P2P network layer, security
-layer, training loop, dashboard, IDE plugin, and all other original code written
+The Sylph software — comprising the runtime, P2P network layer, security layer,
+training and aggregation logic, dashboard, and all other original code written
 for this project — is licensed under the following terms:
 
 TERMS AND CONDITIONS
@@ -36,9 +36,13 @@ TERMS AND CONDITIONS
    permission from the project maintainers:
 
    a) REDISTRIBUTION — You may NOT redistribute the Software, in whole or in
-      part, in original or modified form, through any medium, including but not
-      limited to: publishing forks, hosting mirrors, bundling with other
-      software, or distributing compiled binaries derived from the Software.
+      part, in original or modified form, through any medium — including
+      hosting public mirrors, distributing copies or compiled binaries, or
+      bundling it with other software. A personal fork made solely to prepare
+      and submit pull requests to the Official Repository is expressly
+      permitted — that is the intended way to contribute (see Section 1(c)).
+      What is prohibited is using a fork to publish, distribute, or operate a
+      separate or modified instance of the Software.
 
    b) DERIVATIVE DISTRIBUTION — You may NOT distribute derivative works based
       on the Software. Modified versions are for private/internal use only.
@@ -65,18 +69,22 @@ TERMS AND CONDITIONS
    be reviewed and merged through the Official Repository to maintain the
    security and integrity of the global Sylph network.
 
-   NOTE: Security of the P2P network against modified clients is enforced
-   technically, not solely legally. Technical enforcement mechanisms include:
-   (1) 6-stage cryptographic validation of every received LoRA delta,
-   (2) code-signed release verification in the installer,
-   (3) Byzantine aggregation that rejects deltas from poorly-behaved nodes
-       regardless of what software they claim to run.
-   The no-redistribution clause reinforces this technical enforcement.
+   NOTE: Security of the network against modified clients is enforced
+   technically as well as legally. The protocol is designed to verify the
+   integrity and provenance of participating clients and the artifacts they
+   exchange, and to quarantine nodes that deviate from expected behavior.
+   The no-redistribution clause reinforces that technical enforcement.
 
 4. CONTRIBUTIONS
 
    By submitting contributions to the Official Repository, you agree that your
-   contributions are licensed under the same terms as this license.
+   contributions are licensed under the same terms as this license, and you
+   grant the project and its users a perpetual, worldwide, royalty-free,
+   irrevocable patent license to make, use, and run your contribution as part
+   of the Software, limited to patent claims you own that are necessarily
+   infringed by your contribution. This inline grant applies unless and until a
+   separate Contributor License Agreement (CLA) — which the maintainers may
+   require before merging — supersedes these terms.
 
 5. DISCLAIMER
 
@@ -95,20 +103,15 @@ TERMS AND CONDITIONS
    possession.
 
 =============================================================================
-COMPONENT 2: MODEL WEIGHTS (Qwen 3.5 series and other base models)
+COMPONENT 2: THIRD-PARTY MODEL WEIGHTS
 =============================================================================
 
-The base model weights used by Sylph (Qwen3.5 series and other Qwen-family
-models) are released by Alibaba Cloud under the Apache License, Version 2.0.
+Sylph is model-agnostic: it runs base model weights that it does not author,
+own, or relicense. Each model you choose to run is governed solely by its own
+upstream license — for example, the Apache License 2.0, the Llama Community
+License, the Gemma Terms of Use, or other terms set by that model's publisher.
 
-Users receive the model weights under Apache 2.0 with full redistribution
-rights as granted by that license. The Sylph Public Use License does NOT
-and CANNOT override or restrict rights granted by Apache 2.0 for those weights.
-
-Apache 2.0 grants irrevocable rights to use, reproduce, and distribute the
-model weights (with attribution). Sylph's no-redistribution clause applies
-ONLY to Sylph's original software (Component 1), not to the Apache 2.0
-model weights.
-
-The full text of the Apache License, Version 2.0 is available at:
-https://www.apache.org/licenses/LICENSE-2.0
+The Sylph Public Use License governs ONLY Sylph's original software
+(Component 1). It does NOT, and CANNOT, override, restrict, or extend any
+rights or obligations attached to third-party model weights. Obtain and use
+each model under the terms provided by its publisher.

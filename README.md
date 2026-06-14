@@ -40,21 +40,23 @@ It's a universal AI runtime — runs on your hardware, learns from your work, an
 
 ## ⚡ Run Any Model. Literally Any.
 
-SmolLM **135M** on your phone. All the way to **700B+** on a cluster. Everything in between.
+SmolLM **135M** on your phone. All the way past **1T** on a cluster. Everything in between.
 
-| Local | API |
-|---|---|
-| Qwen 3.5, Qwen 3.5-Instruct | GPT-5.5, GPT-4o |
-| Gemma 4, Gemma 3 | Claude Opus 4.7, Claude Sonnet |
-| LFM 2.5 | Gemini 2.5 Pro |
-| Llama 4, Llama 3.x | Grok 3 |
-| Mistral, Mixtral | Any OpenAI-compatible endpoint |
-| DeepSeek-R2, DeepSeek-V3 | |
-| Phi-4, Phi-3.5 | |
-| SmolLM 135M | |
-| **Any model released after this README was written** | |
+| Local &amp; open-weight |
+|---|
+| Qwen3.6, Qwen3.5 |
+| DeepSeek-V4, DeepSeek-R1 |
+| Llama 4, Llama 3.x |
+| Gemma 4, Gemma 3 |
+| Kimi K2.7, GLM-4.6 |
+| Mistral Medium 3.5, Mixtral |
+| Phi-4, LFM 2.5 |
+| SmolLM 135M |
+| **Any model released after this README was written** |
 
 Transformer, MoE, SSM, hybrid — architecture doesn't matter. GGUF, AWQ, GPTQ, fp16, int4, bf16 — quantization doesn't matter. Mobile, desktop, laptop, cluster — form factor doesn't matter.
+
+Prefer to point at a server? Sylph speaks the **OpenAI-compatible API**, so self-hosted runtimes like vLLM, llama.cpp, and Ollama plug straight in — and any other compatible endpoint works too. What you connect, and whether it fits that provider's terms, is entirely your call.
 
 **If it exists, it runs.**
 
@@ -74,7 +76,7 @@ Every Sylph node is part of a hive. When any node figures something out, it dist
 
 **What travels across the hive is what was learned — never what it was learned from.**
 
-Your raw data, your queries, your files — those never leave your device. The hive shares knowledge, not training data. Every incoming broadcast is cryptographically verified before it touches your model. A compromised node gets quarantined instantly.
+Your raw data, your queries, your files — those never leave your device. The hive shares knowledge, not training data. Every incoming broadcast is cryptographically verified before it touches your model, and a node that misbehaves gets quarantined.
 
 No central server. No telemetry. Zero trust assumed — of anyone.
 
@@ -82,10 +84,10 @@ No central server. No telemetry. Zero trust assumed — of anyone.
 
 | Mode | Size | How it works |
 |---|---|---|
-| 🔇 **Solo** | Just you | Fully local, fully offline. No sending, no receiving. Nobody knows you exist. |
-| 👥 **Group** | 2 – 20 nodes | Your closed circle. Encrypted, private. What you figure out together stays between you. |
-| 🏘️ **Community** | 2 – 100 nodes | A larger private network — same rules, bigger table. |
-| 🌐 **Global** | Everyone | The full hive. You share what you learn or you don't touch what others learned. No free riders. |
+| 🔇 **Solo** | Just you | Fully local, fully offline, fully isolated. No sending, no receiving. Nobody knows you exist. |
+| 👥 **Group** | 2 – 100 nodes | Your closed circle. Encrypted, private. What you figure out together stays between you. |
+| 🏘️ **Community** | Up to thousands | A bigger private network — same rules, much larger scale. |
+| 🌐 **Global** | Everyone | The whole hive. You share what you learn, or you don't touch what others learned. No free riders. |
 
 The global hive's collective intelligence is **earned, not extracted**. Every node that benefits also contributes. That's how the network stays healthy at scale.
 
@@ -126,7 +128,7 @@ How the trust system works. How models bond with each other. How they get promot
 - **Distributed CRDT architecture** — conflict-free, eventually consistent, Byzantine fault-tolerant
 - **Libp2p + MLS** — encrypted peer-to-peer transport
 - **DoRA fine-tuning** — on-device model adaptation with state-of-the-art efficiency
-- **Differential privacy** — provable bounds on what the hive can infer about any individual node
+- **Differential privacy** — strong limits on what the hive can infer about any individual node
 
 ---
 
@@ -149,10 +151,10 @@ Not a sanitized subset. Not a demo. The real thing.
 Under the [Sylph Public Use License v1.0](LICENSE):
 - ✅ Use it for anything — personal, commercial, private
 - ✅ Modify it for private or internal use
-- ✅ Contribute modifications back via pull request
-- ❌ No redistribution or forking without permission
+- ✅ Fork it to contribute — open a pull request back to the official repo
+- ❌ No public redistribution, modified builds, or running a competing fork of the network
 
-The no-fork rule isn't bureaucracy — the entire hive's security depends on every node running verified code. A backdoored fork doesn't just affect you; it's an attack vector against every connected node. The license is the legal layer on top of technical enforcement that's already in the protocol.
+Fork away to send a pull request — that's exactly how Sylph gets better. What you *can't* do is ship a modified build or stand up a competing fork of the network. This isn't bureaucracy: the hive's security depends on every node running verified code, and a backdoored client isn't just your problem — it's an attack vector against every connected node. The license is the legal layer; the protocol is designed to enforce it technically, not just on paper.
 
 ---
 
@@ -163,7 +165,7 @@ Sylph isn't out yet. But when it is, this is where it lands.
 **⭐ Star** to bookmark it.
 **👁️ Watch** to get notified the moment anything drops.
 
-The hard parts are done. The rest is shipping. 🚢
+The groundwork is laid. Now comes the hard, careful part — and that's exactly where we are. 🚢
 
 ---
 
